@@ -2,14 +2,7 @@ import re
 from math import comb
 from itertools import combinations 
 
-'''
-#.#.### 1,1,3
-.#...#....###. 1,1,3
-.#.###.#.###### 1,3,1,6
-####.#...#... 4,1,1
-#....######..#####. 1,6,5
-.###.##....# 3,2,1
-'''
+
 def find(s, ch):
     return [i for i, ltr in enumerate(s) if ltr == ch], s.count(ch)
 
@@ -36,6 +29,11 @@ def getArrangements(row,groups,pattern):
 def splitRow(line):
     row = line.strip().split(" ")[0]
     groups =  [int(numeric_string) for numeric_string in (line.strip().split(" ")[1].split(','))]
+
+
+    for i in range(0,4):
+        row=row+row
+        groups = groups+groups
 
     pattern = r"[\.?]*"
 
