@@ -1,5 +1,5 @@
 import sys
-import Day1,Day2,Day3,Day4,Day5,Day6,Day7,Day8,Day9,Day10
+import Day1,Day2,Day3,Day4,Day5,Day6,Day7,Day8,Day9,Day12
 
 func_dict = {
     "Day1.day1":Day1.day1,
@@ -11,7 +11,7 @@ func_dict = {
     "Day7.day7":Day7.day7,
     "Day8.day8":Day8.day8,
     "Day9.day9":Day9.day9,
-    "Day10.day10":Day10.day10
+    "Day12.day12":Day12.day12
 }
 
 
